@@ -2,6 +2,18 @@
 
 **PortWeaver** is a pipeline **Nmap + local LLM (Ollama)** scanner that turns raw scans into **clean, novice-friendly security reports**—without losing technical detail.
 
+<p align="center">
+  <img src="assets/images/1.png" alt="PortWeaver banner" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/2.png" alt="PortWeaver banner" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/3.png" alt="PortWeaver banner" width="900">
+</p>
+
 * ✅ Fully chained pipeline: **Discovery → Quick → Deep → Broad Enumerations → Facts → Per-Host LLM → Final Report**
 * ✅ **Per-host Markdown reports** include **verbatim facts** (ports/services/TLS/headers/SSH/CVEs/banners) **+** plain-English risk & actions
 * ✅ **Final report** (per model) with exec summary **and** a complete per-host appendix (Facts, Model Report, Enum Highlights)
