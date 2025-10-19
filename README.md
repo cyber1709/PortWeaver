@@ -1,3 +1,5 @@
+# PortWeaver
+
 **PortWeaver** is a pipeline **Nmap + local LLM (Ollama)** scanner that turns raw scans into **clean, novice-friendly security reports**—without losing technical detail.
 
 * ✅ Fully chained pipeline: **Discovery → Quick → Deep → Broad Enumerations → Facts → Per-Host LLM → Final Report**
@@ -247,4 +249,4 @@ ollama list
 ## Credits
 
 Built on **Nmap** and **Ollama**. PortWeaver orchestrates scans, enumerations, and LLM reporting to produce a single, clean deliverable for engineers and non-engineers alike.
-# PortWeaver
+
