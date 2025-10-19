@@ -1,0 +1,77 @@
+# =========================
+# OS / Editor cruft
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.tmp
+.python-version
+.env
+.env.*
+.venv/
+venv/
+ENV/
+pip-wheel-metadata/
+*.egg
+*.egg-info/
+dist/
+build/
+site/
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Project: PortWeaver outputs
+# =========================
+# All runtime scan artifacts are written under scans/
+scans/
+
+# If you want to keep the folder but not its contents:
+# (create an empty scans/.gitkeep file)
+!scans/.gitkeep
+
+# Common Nmap byproducts (in case they end up outside scans/)
+*.gnmap
+*.nmap
+*.xml
+
+# Extra safety: ignore ad-hoc results you might drop at root
+live.txt
+discover*.gnmap
+quick-22-80-443.txt
+llm-host-analysis.txt
+final-report-*.md
+reports/
+facts-hosts/
+deep-hosts/
+enumerations/
+
+# Archives / exports
+*.zip
+*.tar
+*.tar.gz
+*.tgz
