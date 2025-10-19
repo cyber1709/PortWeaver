@@ -94,13 +94,13 @@ ollama>=0.3.0
 **Internal network** (auto-detects a /24 on macOS; or pass `--cidr`)
 
 ```bash
-sudo python scanner.py --mode internal --org "HomeLab"
+sudo python portweaver.py --mode internal --org "HomeLab"
 ```
 
 **External target** (IP or CIDR)
 
 ```bash
-sudo python scanner.py --mode external --target 203.0.113.0/24 --org "Acme"
+sudo python portweaver.py --mode external --target 203.0.113.0/24 --org "Acme"
 ```
 
 If you **don’t** pass `--models`, PortWeaver shows a **numbered list** of **locally available** models from `ollama list`.
@@ -112,32 +112,32 @@ If you **don’t** pass `--models`, PortWeaver shows a **numbered list** of **lo
 **Pick models interactively (installed ones):**
 
 ```bash
-sudo python scanner.py --mode external --target 203.0.113.0/24 --org "Acme"
+sudo python portweaver.py --mode external --target 203.0.113.0/24 --org "Acme"
 ```
 
 **Preselect models (skip menu):**
 
 ```bash
-sudo python scanner.py --mode external --target 203.0.113.0/24 --org "Acme" \
+sudo python portweaver.py --mode external --target 203.0.113.0/24 --org "Acme" \
   --models llama3.1,qwen2.5:7b-instruct
 ```
 
 **Include vulnerability scripts** (slower / potentially intrusive):
 
 ```bash
-sudo python scanner.py --mode external --target 203.0.113.0/24 --org "CustomerX" --with-vuln
+sudo python portweaver.py --mode external --target 203.0.113.0/24 --org "CustomerX" --with-vuln
 ```
 
 **Faster timing** (noisier):
 
 ```bash
-sudo python scanner.py --mode internal --org "Lab" --aggressive
+sudo python portweaver.py --mode internal --org "Lab" --aggressive
 ```
 
 **Custom output path:**
 
 ```bash
-sudo python scanner.py --mode external --target 198.51.100.0/24 --org "BlueTeam" --outdir /tmp/portweaver-run
+sudo python portweaver.py --mode external --target 198.51.100.0/24 --org "BlueTeam" --outdir /tmp/portweaver-run
 ```
 
 ---
